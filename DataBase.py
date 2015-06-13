@@ -15,7 +15,7 @@ import sqlite3 as sql
 #	method
 #
 def displayHighscores():
-	""" method prints record from database to std output """
+	""" method prints records from database to std output """
 
 	dbFile = "StockMarket.db"	
 
@@ -44,7 +44,7 @@ def displayHighscores():
 #	
 def saveHighScores(playerList):
 	"""
-		@paramater playerList : the list of tuples each keeps player info
+		@paramater playerList : a list of tuples each keeps player info
 
 		if there is records on dataBase :
 			methdod adds new records to table.
