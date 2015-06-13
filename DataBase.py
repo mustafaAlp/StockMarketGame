@@ -77,7 +77,7 @@ def saveHighScores(playerList):
 
 
 
-	else:	#eger database ilk defa olusacaksa else komutu calisir					
+	else:	#if there is no database file					
 		db = sql.connect(dbFile)
 		im = db.cursor()
 
