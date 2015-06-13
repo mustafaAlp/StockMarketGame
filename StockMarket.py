@@ -66,7 +66,7 @@ def setPlayer(nameList):
 #
 def result(playerList):
 	"""
-		@paramater playerList: list which keeps players
+		@paramater playerList: list which includes User objects
 
 		method calculates all players net worth, finds the winner
 		and sands players to database 
@@ -125,12 +125,12 @@ def playStockMarket():
 #
 def season(playerList):
 	"""
-		@paramater  playerList: list keeps players 
+		@paramater  playerList: list which includes User objects 
 
-		season method represents a complete play of the game
-		every week item worths chages
-		every player has one turn for each week.
-		at the and of the season, method calculates players networths   
+		Season method represents a complete play of the game.
+		Every week items worths changes.
+		Every player has one turn for each week.
+		At the and of the season, method calculates players networths   
 	"""
 	for j in range(1,12):
 		setItemValue()
@@ -166,8 +166,8 @@ def sort_players(playerList):
 	"""	
 		method sorts the playerList by using selection sort algorithm
 		
-		@paramater playerList	:	list which keeps scores of the players who just played the game.
-		@return : list which keep new version of sorted high scores  
+		@paramater playerList	: list which includes User objects.
+		@return 		: list which keep new version of sorted high scores.
 	"""
 	for i in xrange(0, len(playerList)):
 		for j in xrange(i, len(playerList)):
@@ -189,8 +189,8 @@ def handleData(playerList):
 	"""
 		method prepares data to write to the database
 
-		@paramater playerList: the list which includes User objects
-		@return a list which includes tuples to write database
+		@paramater playerList	: list which includes User objects
+		@return 		: a list which includes tuples to write database
 	"""
 	gameData = list()
 	counter = 0
